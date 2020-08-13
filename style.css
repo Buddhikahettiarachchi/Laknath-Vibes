@@ -15,7 +15,17 @@ html, body {
   position: fixed;
   width: 100%;
   height: 5rem;
-  z-index: 1;
+  z-index: 10;
+}
+
+.toggle-nav-bar-color {
+  background-color: #3E87AF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .nav-bar {
@@ -112,6 +122,7 @@ main {
   height: 100%;
   max-width: 900px;
   margin: auto;
+  background-color: chartreuse;
 }
 
 .banner {
@@ -122,5 +133,39 @@ main {
   width: 100%;
   height: 100vh;
   min-height: 500px;
+}
+
+.banner-overlay-hidden {
+  font-family: 'Chilanka', cursive;
+  position: fixed;
+  width: 100%;
+  -webkit-transform: translateY(100vh);
+          transform: translateY(100vh);
+  height: 100vh;
+  background-color: white;
+  z-index: 5;
+  opacity: 0;
+  opacity: 0;
+  -webkit-transition: opacity 1s, -webkit-transform 0.5s;
+  transition: opacity 1s, -webkit-transform 0.5s;
+  transition: opacity 1s, transform 0.5s;
+  transition: opacity 1s, transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-overlay-toggle {
+  opacity: 1;
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
 }
 /*# sourceMappingURL=style.css.map */
