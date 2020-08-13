@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+  background-color: coral;
+}
+
+//navigation styling start
+
+.navigation{
+  position: fixed;
+  width: 100%;
+  height:5rem;
+  z-index: 1;
+}
+
+.nav-bar{
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  max-width: 900px;
+  margin:auto;
+}
+.logo{
+  margin-left: 1rem;
+}
+.logo h2{
+  font-family: 'Chilanka', cursive;
+  color:white;
+  letter-spacing:0.2rem;
+  opacity:0.8;
+}
+
+
+
+// harmburger icon styling start
+
+#nav-icon1,
+#nav-icon2,
+#nav-icon3,
+#nav-icon4 {
+  width: 40px;
+  height: 25px;
+  position: relative;
+  margin-right:1rem;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  opacity: 0.8;
+  // background-color: purple;
+}
+
+#nav-icon1 span,
+#nav-icon3 span,
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 9px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 10px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 10px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+// harmburger icon styling end
+
+
+main{
+  width: 100%;
+  height: 100%;
+  max-width:900px;
+  margin: auto;
+
+}
+//navigatino styling end
+
+//banner styling start
+.banner{
+  background-image: url(./assets/travel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:70%;
+  width:100%;
+  height:100vh;
+  min-height:500px;
+
+}
+
+
+
+//banner styling end
